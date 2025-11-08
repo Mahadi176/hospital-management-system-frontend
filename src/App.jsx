@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -29,7 +29,7 @@ function App() {
           <Route path="register" element={<Register />} />
 
           {/* Admin Protected Dashboard with Dynamic Routing */}
-          <Routes>
+          <Route>
             <Route
               path="dashboard"
               element={
@@ -54,7 +54,7 @@ function App() {
 
             {/* Redirect unknown routes */}
             <Route path="*" element={<Navigate to="/dashboard" replace />} />
-          </Routes>
+          </Route>
 
           {/* 404/Not Found Page (Optional) */}
           <Route
