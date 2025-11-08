@@ -15,7 +15,7 @@ const Layout = () => {
 
       {/* Basic Footer */}
       <footer className="bg-gray-800 text-white p-4 text-center">
-        <p>&copy; {new Date().getFullYear()} HMS | Hospital Management System. Built with React and TailwindCSS.</p>
+        <p>&copy; {new Date().getFullYear()} HMS | Hospital Management System. Developed By Mahadi & Mehadi</p>
       </footer>
     </div>
     );
