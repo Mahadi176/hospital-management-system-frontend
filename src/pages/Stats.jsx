@@ -52,23 +52,28 @@ const Stats = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {/* Chart */}
-      <div className="bg-white shadow rounded p-4 flex flex-col">
-        <h2 className="text-lg font-bold mb-4">User Growth</h2>
-        <Bar data={data} />
-      </div>
+    <div>
+      <h2 className="text-xl font-bold mb-4">Statistics</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Chart */}
+        <div className="bg-white shadow rounded p-4 flex flex-col">
+          <h2 className="text-lg font-bold mb-4">User Growth</h2>
+          <Bar data={data} />
+        </div>
 
-      {/* Calendar */}
-      <div className="bg-white shadow rounded p-4 flex flex-col items-center">
-        <h2 className="text-lg font-bold mb-4">Calendar</h2>
-        <Calendar value={calendarDate} onChange={setCalendarDate} />
-      </div>
+        {/* Calendar */}
+        <div className="bg-white shadow rounded p-4 flex flex-col items-center">
+          <h2 className="text-lg font-bold mb-4">Calendar</h2>
+          <Calendar value={calendarDate} onChange={setCalendarDate} />
+        </div>
 
-      {/* Current Time */}
-      <div className="bg-white shadow rounded p-4 flex flex-col items-center md:col-span-2">
-        <h2 className="text-lg font-bold mb-4">Current Time</h2>
-        <p className="text-2xl font-mono">{currentTime.toLocaleTimeString()}</p>
+        {/* Current Time */}
+        <div className="bg-white shadow rounded p-4 flex flex-col items-center md:col-span-2">
+          <h2 className="text-lg font-bold mb-4">Current Time</h2>
+          <p className="text-2xl font-mono">
+            {currentTime.toLocaleTimeString()}
+          </p>
+        </div>
       </div>
     </div>
   );

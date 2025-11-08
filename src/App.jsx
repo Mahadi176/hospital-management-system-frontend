@@ -43,7 +43,7 @@ function App() {
               <Route
                 index
                 element={
-                  <p className="p-4">Welcome Admin! Select an action.</p>
+                  <p className="p-6 text-4xl font-medium text-center">Welcome Admin! Select an action.</p>
                 }
               />
               <Route path="stats" element={<Stats />} />
