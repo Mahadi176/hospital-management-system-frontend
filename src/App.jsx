@@ -8,6 +8,10 @@ import Diagnostics from "./pages/Diagnostics";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
+import DiagnosticsTests from "./pages/DiagnosticsTests";
+import Doctors from "./pages/Doctors";
+import Stats from "./pages/Stats";
+import Users from "./pages/Users";
 
 function App() {
   // Simple check for admin role (In a real app, this would come from Auth context)
